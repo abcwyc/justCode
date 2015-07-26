@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping List</title>
+</head>
+<body>
+	<h1>What to buy</h1>
+	<p title="a gentle reminder">Don't forget to buy this stuff.</p>
+	<!-- <p>This is just a test</p> -->
+	<ul id="purchases">
+		<li>A tin of beans</li>
+		<li class="sale">Cheese</li>
+		<li class="sale important">Milk</li>
+	</ul>
+	<script>
+		alert(typeof document.getElementById("purchases"));
+
+		alert(document.getElementsByTagName("li").length);
+
+		for(var i=0; i<document.getElementsByTagName("li").length; i++){
+			alert(typeof document.getElementsByTagName("li")[i]);
+		}
+
+		var itmes=document.getElementsByTagName("li");
+		for (var i = 0; i < itmes.length; i++) {
+			alert(typeof itmes[i]);
+		};
+
+		alert(document.getElementsByTagName("*").length);
+
+		alert(document.getElementsByClassName("important sale").length);
+
+		var shopping = document.getElementById("purchases");
+		var sale = shopping.getElementsByClassName("sale");
+		alert(sale.length);
+
+		var paras=document.getElementsByTagName("p");
+		for (var i = 0; i < paras.length; i++) {
+			alert(paras[i].getAttribute("title"));
+		};
+
+		var paras=document.getElementsByTagName("p");
+		for (var i = 0; i < paras.length; i++) {
+			var title_text=paras[i].getAttribute("title");
+			if (title_text !=null) {
+				alert(title_text);
+			};
+		};
+
+		var paras=document.getElementsByTagName("p");
+		for (var i = 0; i < paras.length; i++) {
+			var title_text=paras[i].getAttribute("title");
+			if (title_text) alert(title_text);
+		};
+
+		var shopping=document.getElementById("purchases");
+		alert(shopping.getAttribute("title"));
+		shopping.setAttribute("title","a list of goods");
+		alert(shopping.getAttribute("title"));
+
+		 var paras=document.getElementsByTagName("p");
+		 for(var i=0; i<paras.length;i++){
+		 	var title_text=paras[i].getAttribute("title");
+		 	if(title_text){
+		 		paras[i].setAttribute("title","baran new title text");
+		 		alert(paras[i].getAttribute("title"));
+		 	}
+		 }
+	</script>
+</body>
+</html>
