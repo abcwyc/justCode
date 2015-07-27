@@ -4,6 +4,7 @@
 1. git
 2. github
 3. markdown
+4. javascript
 
 -------------------
 ##资料
