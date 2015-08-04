@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航居中</title>
+	<style>
+		ul{
+			text-align: center; 
+			height: 30px;
+			line-height: 30px;
+			background-color: #f00;
+		}
+		li,a{
+			display: inline-block;
+			width: 80px;
+			height: 100%;
+		}
+		a,a:hover,li.cur a{
+			color: #fff;
+			text-decoration: none;
+		}
+		a:hover,li.cur a{background-color: #c00}
+	</style>
+</head>
+<body>
+	<ul class="m-nav">
+		<li><a href="#">推荐</a></li>
+		<li class="cur"><a href="#">歌单</a></li>
+		<li><a href="#">打牌DJ</a></li>
+		<li><a href="#">歌手</a></li>
+		<li><a href="#">新碟上架</a></li>
+	</ul>
+</body>
+</html>
