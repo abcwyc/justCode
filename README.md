@@ -1,10 +1,11 @@
 # Test Repertory
 
-##学习测试
+##练习测试
 1. git
 2. github
 3. markdown
 4. javascript
+5. cssReset
 
 -------------------
 ##资料
