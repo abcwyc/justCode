@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>滑入划出</title>
+	<script src="jquery-1.11.3.min.js"></script>
+	<style>
+		#content,#flipshow,#fliphide,#fliptoggle{
+			padding: 5px;
+			text-align: center;
+			background-color: #ece023;
+			border: solid 1px #ece999;
+			cursor: pointer;
+		}
+		#content{padding: 50px; display: none;}
+	</style>
+</head>
+<body>
+	<div id="flipshow">出现</div>
+	<div id="fliphide">隐藏</div>
+	<div id="fliptoggle">显示/隐藏</div>
+	<div id="content"></div>
+
+	<script>
+	$(document).ready(function(){
+		$("#flipshow").click(function(){
+			$("#content").slideDown(500);
+		});
+		$("#fliphide").click(function(){
+			$("#content").slideUp(500);
+		});
+		$("#fliptoggle").click(function(){
+			$("#content").slideToggle(500);
+		});
+	});
+	</script>
+</body>
+</html>

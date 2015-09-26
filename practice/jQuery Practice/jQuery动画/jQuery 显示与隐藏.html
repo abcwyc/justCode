@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery 显示与隐藏</title>
+	<script src="jquery-1.11.3.min.js"></script>
+
+</head>
+<body>
+	<p>Hello World</p>
+	<button id="hide">显示</button>
+	<button id="show">隐藏</button> <br><br>
+	<button id="toggle">单击显示/双击隐藏</button>
+
+	<script>
+		$(document).ready(function(){
+			$("#hide").click(function(){
+				$("p").show(1000);		
+			});
+			$("#show").click(function(){
+				$("p").hide(1000);
+			})
+			$("#toggle").click(function(){
+				$("p").show(500);
+			});
+			$("#toggle").dblclick(function(){
+				$("p").hide(500);
+			});
+		});
+	</script>
+</body>
+</html>

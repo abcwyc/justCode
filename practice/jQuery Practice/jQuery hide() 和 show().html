@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery hide() 和 show()</title>
+	<script src="jquery-1.11.3.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			$("p").hide(300);
+		});
+		$("#btn2").click(function(){
+			$("p").show(300);
+		});
+	});
+	</script>
+</head>
+<body>
+	<p>如果你点击“隐藏”按钮，我将会消失。</p>
+	<button id="btn1">隐藏</button>
+	<button id="btn2">显示</button>
+</body>
+</html>

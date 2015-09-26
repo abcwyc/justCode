@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery toggle()</title>
+	<script src="jquery-1.11.3.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("p").toggle(300);
+		});
+	});
+	</script>
+</head>
+<body>
+	<button>隐藏/显示</button>
+	<p>这是一个文本段落。</p>
+	<p>这是另外一个文本段落。</p>
+</body>
+</html>

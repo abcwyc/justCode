@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mousedown/mouseup/click区别</title>
+	<script src="jquery-1.11.3.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#p1").mousedown(function(){
+			alert("mousedown");
+		});
+		$("#p2").mouseup(function(){
+			alert("mouseup");
+		});
+		$("#p3").click(function(){
+			alert("click");
+		});
+	});
+	</script>
+</head>
+<body>
+	<p id="p1">Mouse Down是鼠标按下触发的动作；</p>
+	<p id="p2">Mouse Up是鼠标抬起触发的动作；</p>
+	<p id="p3">Mouse  Click就是按下又抬起的动作。</p>
+</body>
+</html>
